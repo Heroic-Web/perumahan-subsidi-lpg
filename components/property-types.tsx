@@ -38,11 +38,11 @@ export function PropertyTypes() {
         </div>
 
         {/* Property Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 gap-8 justify-items-center">
           {propertyTypes.map((property, index) => (
             <div
               key={index}
-              className={`group relative rounded-xl border-2 transition-all duration-300 hover:shadow-xl ${
+              className={`w-full max-w-2xl group relative rounded-xl border-2 transition-all duration-300 hover:shadow-xl ${
                 property.popular
                   ? 'border-blue-600 dark:border-blue-400 bg-gradient-to-br from-blue-50 to-white dark:from-blue-950/30 dark:to-slate-800 shadow-lg'
                   : 'border-blue-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:-translate-y-2'
