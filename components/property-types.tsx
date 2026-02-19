@@ -98,16 +98,21 @@ export function PropertyTypes() {
                 </div>
 
                 {/* Price Section */}
-                <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950/30 dark:to-blue-950/30 rounded-lg p-4 mb-6 border border-green-200 dark:border-green-900/50">
-                  <p className="text-xs text-muted-foreground mb-1">Harga Mulai</p>
-                  <p className="text-2xl font-bold text-green-700 dark:text-green-400 mb-2">
+                <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950/30 dark:to-blue-950/30 rounded-lg p-6 mb-6 border border-green-200 dark:border-green-900/50 text-center">
+                  <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wide">
+                    Harga Mulai
+                  </p>
+
+                  <p className="text-3xl font-bold text-green-700 dark:text-green-400 mb-3">
                     {property.priceRange}
                   </p>
-                  <p className="text-sm text-green-600 dark:text-green-300 font-semibold flex items-center gap-2">
+
+                  <div className="flex items-center justify-center gap-2 text-green-600 dark:text-green-300 font-semibold">
                     <DollarSign className="w-4 h-4" />
-                    {property.dpPrice}
-                  </p>
+                    <span>{property.dpPrice}</span>
+                  </div>
                 </div>
+
 
                 {/* CTA Button */}
                 <a

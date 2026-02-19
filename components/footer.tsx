@@ -96,11 +96,20 @@ export function Footer() {
         <div className="border-t border-border/30"></div>
 
         {/* Bottom Footer */}
-        <div className="py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          {/* Copyright */}
-          <p className="text-sm text-muted-foreground">
-            © {currentYear} Samara Residence. All rights reserved.
-          </p>
+        <div className="py-8 flex flex-col md:flex-row items-center justify-between gap-6 border-t border-border/50">
+          
+          {/* Left Side - Copyright */}
+          <div className="text-center md:text-left">
+            <p className="text-sm text-muted-foreground">
+              © {currentYear} Samara Residence. All rights reserved.
+            </p>
+            <p className="text-sm text-muted-foreground mt-1">
+              IT Partner: 
+              <span className="font-semibold text-accent ml-1">
+                PT. Heroic Inovasi Nusantara
+              </span>
+            </p>
+          </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
@@ -133,7 +142,9 @@ export function Footer() {
               <Twitter className="w-5 h-5 text-muted-foreground hover:text-accent transition-colors" />
             </a>
           </div>
+
         </div>
+
       </div>
 
 
